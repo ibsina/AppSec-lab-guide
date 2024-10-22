@@ -13,16 +13,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            overflow: hidden;
         }
         .container {
             text-align: center;
             background-color: white;
-            padding: 20px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            width: 90%;
+            width: 100%;
+            margin: 20px; /* Add margin to avoid overlap */
         }
         h1 {
             margin-bottom: 20px;
@@ -30,10 +32,12 @@
         }
         p {
             color: #7f8c8d;
+            margin-bottom: 30px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            margin-bottom: 30px; /* Ensures space between list and footer */
         }
         li {
             margin: 15px 0;
@@ -52,7 +56,6 @@
             color: white;
         }
         .footer {
-            margin-top: 20px;
             font-size: 14px;
             color: #95a5a6;
         }
@@ -63,10 +66,9 @@
         <h1>Hands-on Workshop Lab Guides</h1>
         <p>Select a lab guide to get started:</p>
         <ul>
-            <li><a href="https://docs.google.com/document/d/e/2PACX-1vSwvXTtVQTQusEcwpBG-4qV4dOIBmoK2xuRnNEBMEEjHrH3gIeWmnjwW4TynsKXAg/pub">Lab 1: Bot Mitigation - FortiWEB </a></li>
-            <li><a href="https://docs.google.com/document/d/e/2PACX-1vQUmBMwQw1EOIsNy43FkZxb4EoRfov8f0ZMbUIO2BuW2mObc_ZHi8EBgdzCdGaU_x2Ox7k7wn7h4sBI/pub">Lab 2: Machine Learning - FortiWEB </a></li>
-            <li><a href="https://docs.google.com/document/d/e/2PACX-1vT2sRup67e6wnyPWLziXsvAPV_d036x8Mk52VKv_AR0MDBtKcBfw68TZWn56ebd9A/pub">Lab 3: API Protection - FortiWEB</a></li>
-            <li><a href="https://docs.google.com/document/d/e/2PACX-1vT-KVcT5Yj8_V6dT68gbfIwW0bBR8ZgaT3YVNY9-_V62pMeLf6506jzVrVlxxDKvA/pub">Lab 4: HTTP Content-Routing and URL Rewrite - FortiADC</a></li>
+            <li><a href="lab1/index.html">Lab 1: Introduction</a></li>
+            <li><a href="lab2/index.html">Lab 2: Network Setup</a></li>
+            <li><a href="lab3/index.html">Lab 3: Application Deployment</a></li>
             <!-- Add more labs as needed -->
         </ul>
         <div class="footer">
